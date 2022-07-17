@@ -1,0 +1,93 @@
+.wrapper {
+  width: 100%;
+}
+
+.wrapper .carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 60px;
+}
+
+.owl-carousel{
+  width: 380px;
+}
+
+.carousel .card {
+  width: 260px;
+  height: 400px;
+  border-radius: 12px;
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card .image{
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.carousel .card img{
+  width: 100%;
+}
+
+.carousel .card p{
+  width: 200px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+  border: 2px solid #fff !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+  background-color: #fff !important;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.owl-prev {
+  left: 40px;
+}
+
+.owl-next {
+  right: 20px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.2s;
+  background-color: aqua;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover {
+  color: #777;
+}
