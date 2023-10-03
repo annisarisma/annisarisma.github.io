@@ -3,7 +3,6 @@
   <Introduction/>
   <About/>
   <Skills/>
-  <CardSkills/>
 </template>
 
 <script>

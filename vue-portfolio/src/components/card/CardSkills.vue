@@ -150,6 +150,18 @@
         </div>
         <h4>HTML</h4>
     </div>
+    <div class="card">
+        <div class="image-container">
+            <img src="../../assets/images/html-logo.png" alt="">
+        </div>
+        <h4>HTML</h4>
+    </div>
+    <div class="card">
+        <div class="image-container">
+            <img src="../../assets/images/html-logo.png" alt="">
+        </div>
+        <h4>HTML</h4>
+    </div>
   </div>
 </template>
 

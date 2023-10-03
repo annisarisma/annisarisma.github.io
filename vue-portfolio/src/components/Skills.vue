@@ -6,14 +6,16 @@
             <button href="" class="filled-button">Contact Me</button>
         </div>
         <CardSkills/>
+        <CardSoftSkills/>
     </div>
 </template>
 
 <script>
 import CardSkills from './card/CardSkills.vue'
+import CardSoftSkills from './card/CardSoftSkill.vue'
 
 export default {
-    components: { CardSkills }
+    components: { CardSkills, CardSoftSkills }
 
 }
 </script>
