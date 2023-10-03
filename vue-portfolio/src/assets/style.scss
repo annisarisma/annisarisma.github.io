@@ -1,0 +1,62 @@
+:root {
+    --black: #161616;
+    --blacksec: #232323;
+    --red: #F4143D;
+    --white: #FEFEFE;
+    --whitesec: #A6A6A6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--black);
+}
+
+#app {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--white);
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.filled-button {
+    border-radius: 2px;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-top: 20px;
+    border: none;
+}
+
+.title-head {
+    border-left: 6px solid var(--red);
+    padding: 0px 8px;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    background-color: brown;
+    .card {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background-color: var(--blacksec);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    }   
+}
