@@ -1,5 +1,5 @@
 <template>
-  <div class="about-section content-container">
+  <div class="about-section content-container" id="about">
     <div class="shape-container">
         <div class="shape"></div>
         <div class="shape"></div>
@@ -22,18 +22,18 @@ export default {
 
 <style lang="scss">
 .shape-container {
-    display: flex;
-    gap: 36px;
-    width: 50%;
-    height: 300px;
-    overflow: hidden;
-    justify-content: center;
-    .shape {
-        width: 40px;
-        height: 328px;
-        background-color: brown;
-        transform: rotate(30deg);
-    }
+  display: flex;
+  gap: 36px;
+  width: 40%;
+  height: 280px;
+  overflow: hidden;
+  justify-content: center;
+  .shape {
+      width: 40px;
+      height: 328px;
+      background-color: brown;
+      transform: rotate(30deg);
+  }
 }
 .description-container {
 }

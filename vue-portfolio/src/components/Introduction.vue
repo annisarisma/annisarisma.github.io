@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss">
 .content-container {
-    height: 50rem;
+    height: 56rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,18 +53,19 @@ export default {
         .shape-red {
             background-color: transparent;
             position: absolute;
-            right: 0;
+            right: 48px;
             bottom: 0;
             z-index: -100;
         }
         .shape-orange {
             background-color: transparent;
             position: absolute;
-            left: 68px;
+            left: -48px;
             bottom: -24px;
         }
         .photo-formal {
             background-color: transparent;
+            text-align: center;
         }
     }
 }

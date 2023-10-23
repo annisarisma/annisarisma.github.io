@@ -6,7 +6,24 @@
             <button href="" class="filled-button">Contact Me</button>
         </div>
         <CardSkills/>
-        <CardSoftSkills/>
+        <!-- Softskill -->
+        <div class="softskill-container">
+            <div class="description-container">
+                <h1>Softskills</h1>
+                <p>asjdhasdiasdh</p>
+            </div>
+            <CardSoftSkills v-for="softSkill in softSkills" :key="softSkill.title" @mouseover="{showFullText = true; indexHover = softSkill.title}" @mouseleave="{showFullText = false; indexHover = softSkill.title}">
+                <template v-slot:image>
+                    <img src="../assets/images/softskill-image.png" alt="">
+                </template>
+                <template v-slot:title>
+                    <h3>Attention to Detail</h3>
+                </template>
+                <template v-slot:description>
+                    <p>{{ showFullText && indexHover == softSkill.title ? softSkill.description : snippet }}</p>
+                </template>
+            </CardSoftSkills>
+        </div>
     </div>
 </template>
 
@@ -14,8 +31,41 @@
 import CardSkills from './card/CardSkills.vue'
 import CardSoftSkills from './card/CardSoftSkill.vue'
 
+import { computed, ref } from 'vue'
+
 export default {
-    components: { CardSkills, CardSoftSkills }
+    components: { CardSkills, CardSoftSkills },
+    data() {
+        return {
+            softSkills: [
+                {title: 'Attention to Detail', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'softskill-image.png'},
+                {title: 'Attention to Detail 2', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'softskill-image.png'},
+                {title: 'Attention to Detail 3', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'softskill-image.png'},
+                {title: 'Attention to Detail 4', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'softskill-image.png'},
+                {title: 'Attention to Detail 5', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'softskill-image.png'},
+            ],
+            showFullText: false,
+            indexHover: null,
+        }
+    },
+    // methods: {
+    //     // 👇 set id
+    //     showHide(id) {
+    //         this.showFullText = !this.showFullText;
+    //         this.indexHover = id;
+    //     }
+    // },
+    setup() {
+        let posts = ref(
+            {title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod error iure dolorum."}
+        )
+        
+        const snippet = computed(() => {
+            return posts.value.title.substring(0, 20) + '...'; // Mengambil 50 karakter pertama
+        });
+
+        return { snippet };
+    },
 
 }
 </script>
@@ -26,5 +76,11 @@ export default {
     justify-content: start;
     align-items: start;
     gap: 40px;
+    .softskill-container {
+    display: flex;
+        .description-container {
+            width: 380px;
+        }
+    }
 }
 </style>

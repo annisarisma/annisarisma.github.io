@@ -1,8 +1,11 @@
 <template>
-  <Navbar/>
-  <Introduction/>
-  <About/>
-  <Skills/>
+  <div class="wrapper">
+    <Navbar/>
+    <Introduction/>
+    <About/>
+    <Skills/>
+
+  </div>
 </template>
 
 <script>
