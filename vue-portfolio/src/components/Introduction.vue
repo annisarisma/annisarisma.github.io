@@ -26,11 +26,12 @@ export default {
 
 <style lang="scss">
 .content-container {
-    height: 56rem;
+    min-height: 58rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 280px;
+    padding: 20px 0px;
+    margin: 0px 280px;
     .description-container {
         width: 40%;
         text-align: left;

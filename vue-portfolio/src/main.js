@@ -10,11 +10,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret, faTrophy, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import './assets/tailwind.css'
 
 /* add icons to the library */
-library.add(faUserSecret, faInstagram, faLinkedin, faGithub)
+library.add(faUserSecret, faInstagram, faLinkedin, faGithub, faTrophy, faChevronLeft)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(router).mount('#app')
