@@ -1,14 +1,27 @@
 <template>
-    <div class="card-experience card-organization">
-        <div class="icon-container">
-            <font-awesome-icon icon="fa-solid fa-trophy" size="xl" />
+    <div class="card-organization">
+        <div class="header-container">
+            <h3>{{ title }}</h3>
+            <p>{{ place }}</p>
+            <p>{{ date }}</p>
         </div>
-        <div class="text-container">
-            <slot name="title"></slot>
-            <slot name="date"></slot>
-            <div class="list">
-                <slot name="list"></slot>
+        <div class="lists-container">
+            <div class="list" v-for="item in lists">
+                <div class="image-container">
+                </div>
+                <p>{{ item.description }}</p>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    props: {
+        title: String,
+        place: String,
+        lists: Array,
+        date: String,
+    },
+};
+</script>

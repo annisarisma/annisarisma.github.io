@@ -35,6 +35,4 @@ export default {
       transform: rotate(30deg);
   }
 }
-.description-container {
-}
 </style>

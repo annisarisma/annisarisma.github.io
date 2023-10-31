@@ -9,15 +9,25 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/project-detail',
-    name: 'project-detail',
-    component: ProjectDetail
+    path: '/project-detail/:id',
+    name: 'ProjectDetail',
+    component: ProjectDetail,
+    props: true
   },
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+      }
+    } else {
+      return { top: 0 };
+    }
+  }
 })
 
 export default router

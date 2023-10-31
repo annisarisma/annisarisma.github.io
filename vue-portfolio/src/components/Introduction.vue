@@ -2,7 +2,7 @@
   <div class="home-section content-container">
     <div class="description-container">
         <h1>Annisa Risma Aqilah</h1>
-        <p>Web Application Developer Enthusiast</p>
+        <p>I'm a dedicated and detail-oriented individual with a strong work ethic, who thrives on precision and impeccable organization. As a full-stack developer, I bring these qualities into every project, ensuring that every line of code and every element of design is executed with meticulous attention.</p>
         <div class="icon-container">
             <font-awesome-icon icon="fa-brands fa-github" class="icon"/>
             <font-awesome-icon icon="fa-brands fa-linkedin" class="icon"/>
@@ -10,7 +10,7 @@
         </div>
         <button href="" class="filled-button">Read More</button>
     </div>
-    <div class="image-container">
+    <div class="image-splash-container">
         <img src="../assets/images/photo-formal.png" alt="photo-formal" class="photo-formal">
         <img src="../assets/images/shape-red.png" alt="shape-red" class="shape-red">
         <img src="../assets/images/shape-orange.png" alt="" class="shape-orange">
@@ -48,20 +48,21 @@ export default {
         }
     }
 
-    .image-container {
-        width: 40%;
+    .image-splash-container {
+        width: fit-content;
         position: relative;
+        text-align: center;
         .shape-red {
             background-color: transparent;
             position: absolute;
-            right: 48px;
+            right: -80px;
             bottom: 0;
             z-index: -100;
         }
         .shape-orange {
             background-color: transparent;
             position: absolute;
-            left: -48px;
+            left: -36px;
             bottom: -24px;
         }
         .photo-formal {

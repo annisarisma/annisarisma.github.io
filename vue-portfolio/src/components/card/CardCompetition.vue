@@ -1,12 +1,20 @@
 <template>
-    <div class="card-experience card-competition">
+    <div class="card-competition">
         <div class="icon-container">
             <font-awesome-icon icon="fa-solid fa-trophy" size="xl" />
         </div>
-        <div class="text-container">
-            <slot name="title"></slot>
-            <slot name="date"></slot>
-            <slot name="description"></slot>
+        <div class="description-container">
+            <h3>{{ title }}</h3>
+            <p>{{ date }}</p>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    props: {
+        title: String,
+        date: String,
+    }
+};
+</script>

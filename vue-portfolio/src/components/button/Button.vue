@@ -1,12 +1,18 @@
 <template>
     <button class="button button-primary font-bold">
-        <slot name="title"></slot>
+        <router-link :to="{name: routername, params: {id: id}}">
+            {{ title }}
+        </router-link>
     </button>
 </template>
 
 <script>
 export default {
-
+    props: {
+        title: String,
+        routername: String,
+        id: String
+    }
 }
 </script>
 

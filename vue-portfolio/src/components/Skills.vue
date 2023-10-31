@@ -101,8 +101,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.content-container {
+<style lang="scss">
+.skills-section {
     flex-direction: column;
     justify-content: start;
     align-items: start;
@@ -113,13 +113,13 @@ export default {
         border-radius: 8px;
         width: 100%;
         padding: 20px 0px;
-        overflow: hidden;
         .description-container {
-            width: 20%;
+            width: 100%;
             padding: 0px 20px;
         }
         .card-container {
             margin: 0px 20px;
+            gap: 20px;
             width: 80%;
             display: flex;
             justify-content: space-evenly;
