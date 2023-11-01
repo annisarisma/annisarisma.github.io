@@ -14,11 +14,24 @@
 
 <script>
 export default {
-    name: 'Navbar',
     data() {
         return {
-            scrolledNav: null,
-            mobile: null,
+            scrolledNav: false,
+        }
+    },
+    mounted() {
+        window.addEventListener("scroll", this.updateScroll);
+    },
+    methods: {
+        updateScroll() {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 50) {
+            this.scrolledNav = true;
+            return;
+        }
+
+        this.scrolledNav = false;
         }
     },
 }

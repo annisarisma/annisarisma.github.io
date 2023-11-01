@@ -1,10 +1,10 @@
 <template>
     <div class="experience-section content-container">
         <div class="container-header">
-            <div class="container-text">
+            <div class="container-text" data-aos="fade-right">
                 <div class="text-title">
                     <h1>EXPERIENCE</h1>
-                    <p>Throughout my journey, I've garnered a wealth of experience, from active involvement in college organizations, winning competitions, and completing internships companies. These experiences have been extraordinary opportunities for me.</p>
+                    <p>Throughout my journey, I've gained a wealth of experience, from active involvement in college organizations, winning competitions, and completing internships companies. These experiences have been extraordinary opportunities for me.</p>
                 </div>
                 <div class="button-container">
                     <Button :title="'Working'" :hash="'#working'"></Button>
@@ -12,21 +12,22 @@
                     <Button :title="'Organization'" :hash="'#organization'"></Button>
                 </div>
             </div>
-            <div class="container-image">
+            <div class="container-image" data-aos="fade-up">
                 <img src="../assets/images/image-experience.png">
             </div>
         </div>
 
         <!-- Working -->
         <div class="container-experience" id="working">
-            <h3 class="title-text-border">Working</h3>
+            <h3 class="title-text-border" data-aos="fade-right">Working</h3>
             <div class="content-experience">
                 <div class="card-working-container">
                     <CardWorking
                     v-for="(job, index) in jobs"
                     :title="job.title" 
                     :date="job.place" 
-                    :image="job.image"></CardWorking>
+                    :image="job.image"
+                    data-aos="fade-up"></CardWorking>
                 </div>
             </div>
         </div>

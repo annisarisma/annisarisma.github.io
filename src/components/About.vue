@@ -1,5 +1,5 @@
 <template>
-  <div class="about-section content-container" id="about">
+  <div class="about-section content-container" id="about" data-aos="fade-up">
     <div class="shape-container">
         <div class="shape"></div>
         <div class="shape"></div>

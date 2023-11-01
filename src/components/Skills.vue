@@ -1,12 +1,12 @@
 <template>
     <div class="skills-section content-container">
-        <div class="description-container">
+        <div class="description-container" data-aos="fade-right">
             <h1 class="title-head">My Skills</h1>
             <p>I believe that skills can be refined and continuously acquired when pursued with passion. I'm delighted to have the opportunity to engage in a field filled with such capabilities. Here are the skills I have.</p>
             <button href="" class="filled-button">Contact Me</button>
         </div>
         <div class="card-container-hard">
-            <CardSkills v-for="hardSkill in hardSkills">
+            <CardSkills v-for="hardSkill in hardSkills" data-aos="flip-left">
                 <template v-slot:image>
                     <img :src="require('@/assets/images/' + hardSkill.image)">
                 </template>

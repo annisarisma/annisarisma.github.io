@@ -18,3 +18,4 @@ import './assets/tailwind.css'
 library.add(faUserSecret, faInstagram, faLinkedin, faGithub, faTrophy, faChevronLeft, faListCheck)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(router).mount('#app')
+
