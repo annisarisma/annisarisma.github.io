@@ -80,7 +80,7 @@ export default {
                 {title: 'Critical Thinking', description: 'My critical thinking skills enable me to analyze complex problems from multiple angles, allowing for effective decision-making and innovative solutions.', image: 'criticalthinking.jpg'},
                 {title: 'Problem Solving', description: 'I excel in problem-solving. Identify issues, evaluate alternatives, and implement effective solutions, contributing to project success.', image: 'problemsolving.jpg'},
                 {title: 'Adaptability', description: 'I am highly adaptable, readily embracing change and adjusting to new circumstances, which ensures flexibility in various work environments.', image: 'adaptability.jpg'},
-                {title: 'Fast Learner', description: 'uickly grasp new concepts, tools, and technologies, making me adaptable to evolving industry requirements.', image: 'fastlearner.jpg'},
+                {title: 'Fast Learner', description: 'Quickly learning new concepts, tools, and technologies, making me adaptable to evolving industry requirements.', image: 'fastlearner.jpg'},
             ],
             showFullText: false,
             indexHover: null,
