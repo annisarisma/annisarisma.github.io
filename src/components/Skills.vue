@@ -2,7 +2,7 @@
     <div class="skills-section content-container">
         <div class="description-container">
             <h1 class="title-head">My Skills</h1>
-            <p>Here my skill dasdasdasdajsjdjkashdjashd asdasjhdgajsdhjas djhasdhja sdhjasdjhasbdhjasdhjasd. asdbhga svdhasvdhasvdhgasvdasddas</p>
+            <p>I believe that skills can be refined and continuously acquired when pursued with passion. I'm delighted to have the opportunity to engage in a field filled with such capabilities. Here are the skills I have.</p>
             <button href="" class="filled-button">Contact Me</button>
         </div>
         <div class="card-container-hard">
@@ -20,7 +20,7 @@
         <div class="softskill-container">
             <div class="description-container">
                 <h1>Softskills</h1>
-                <p>In the dynamic world of web design and development, technical expertise is undoubtedly vital, but soft skills are equally crucial. Here are some key soft skills that define my approach to web development.</p>
+                <p>In the dynamic world of web design and development, technical expertise is undoubtedly vital, but softskills are equally crucial. Here are some key soft skills that define my approach to web development.</p>
             </div>
             <div class="card-container">
                 <CardSoftSkills v-for="softSkill in softSkills" :key="softSkill.title" @mouseover="{showFullText = true; indexHover = softSkill.title}" @mouseleave="{showFullText = false; indexHover = softSkill.title}">
@@ -31,7 +31,7 @@
                         <h4>{{ softSkill.title }}</h4>
                     </template>
                     <template v-slot:description>
-                        <p>{{ showFullText && indexHover == softSkill.title ? softSkill.description : snippet }}</p>
+                        <p>{{ showFullText && indexHover == softSkill.title ? softSkill.description : limitWords(softSkill.description, 5) }}</p>
                     </template>
                 </CardSoftSkills>
             </div>
@@ -50,7 +50,7 @@ export default {
     data() {
         return {
             hardSkills: [
-                {title: 'HTML', image: 'github.png'},
+                {title: 'HTML', image: 'html-logo.png'},
                 {title: 'CSS', image: 'css-logo.png'},
                 {title: 'SASS', image: 'sass-logo.png'},
                 {title: 'JavaScript', image: 'js-logo.png'},
@@ -73,14 +73,14 @@ export default {
                 {title: 'Adobe Photoshop', image: 'photoshop-logo.png'},
                 {title: 'Adobe Premiere', image: 'premiere-logo.png'},
                 {title: 'Adobe After Effect', image: 'ae-logo.png'},
-                {title: 'Adobe After Effect', image: 'html-logo.png'},
+                {title: 'Xampp', image: 'xampp-logo.png'},
             ],
             softSkills: [
-                {title: 'Attention to Detail', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'softskill-image.png'},
-                {title: 'Attention to Detail 2', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'softskill-image.png'},
-                {title: 'Attention to Detail 3', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'softskill-image.png'},
-                {title: 'Attention to Detail 4', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'softskill-image.png'},
-                {title: 'Attention to Detail 5', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'softskill-image.png'},
+                {title: 'Attention to Detail', description: 'I possess a strong attention to detail, ensuring that even the smallest aspects of a project are thoroughly considered and refined for quality and accuracy.', image: 'attentiontodetail.jpg'},
+                {title: 'Critical Thinking', description: 'My critical thinking skills enable me to analyze complex problems from multiple angles, allowing for effective decision-making and innovative solutions.', image: 'criticalthinking.jpg'},
+                {title: 'Problem Solving', description: 'I excel in problem-solving. Identify issues, evaluate alternatives, and implement effective solutions, contributing to project success.', image: 'problemsolving.jpg'},
+                {title: 'Adaptability', description: 'I am highly adaptable, readily embracing change and adjusting to new circumstances, which ensures flexibility in various work environments.', image: 'adaptability.jpg'},
+                {title: 'Fast Learner', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates sapiente at deleniti, iste dolore odio quod.', image: 'fastlearner.jpg'},
             ],
             showFullText: false,
             indexHover: null,
@@ -97,6 +97,13 @@ export default {
 
         return { snippet };
     },
+    methods: {
+        limitWords(text, wordLimit) {
+            const words = text.substring(0, 20) + '...';
+
+            return words;
+        }
+    }
 
 }
 </script>

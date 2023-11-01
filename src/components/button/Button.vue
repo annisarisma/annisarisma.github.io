@@ -1,6 +1,6 @@
 <template>
     <button class="button button-primary font-bold">
-        <router-link :to="{name: routername, params: {id: id}}">
+        <router-link :to="{hash: hash, name: routername, params: {id: id}}">
             {{ title }}
         </router-link>
     </button>
@@ -11,7 +11,8 @@ export default {
     props: {
         title: String,
         routername: String,
-        id: String
+        id: String,
+        hash: String
     }
 }
 </script>

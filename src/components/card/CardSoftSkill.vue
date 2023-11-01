@@ -25,6 +25,9 @@ export default {
     border-radius: 8px;
     overflow: hidden;
     color: #232323;
+    p {
+        color: black;
+    }
     .image-container {
         width: 100%;
         height: 200px;
@@ -45,7 +48,7 @@ export default {
 
 .card-softskill:hover {
     .image-container {
-        height: 100px;
+        height: 80px;
     }
 }
 

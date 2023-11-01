@@ -8,7 +8,7 @@
     <div class="description-container">
         <h1 class="title-head">About Me</h1>
         <h3>I'am Web Developer</h3>
-        <p>Hi! My name is Annisa Risma Aqilah. I was undergradued from S1 Information System Telkom University Bandung West Java</p>
+        <p>Hi! My name is Annisa Risma Aqilah. I have a solid foundation in both front-end and back-end technologies, and I love turning creative concepts into user-friendly applications.</p>
         <button href="" class="filled-button">Contact Me</button>
     </div>
   </div>
@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style lang="scss">
+.about-section {
+  padding: 80px 0px;
+  margin-bottom: 120px;
+}
 .shape-container {
   display: flex;
   gap: 36px;

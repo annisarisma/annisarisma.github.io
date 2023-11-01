@@ -25,8 +25,10 @@ export default {
 </script>
 
 <style lang="scss">
+.home-section {
+    min-height: 100vh;
+}
 .content-container {
-    min-height: 58rem;
     display: flex;
     justify-content: space-around;
     align-items: center;

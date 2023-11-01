@@ -4,12 +4,12 @@
             <div class="container-text">
                 <div class="text-title">
                     <h1>EXPERIENCE</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>Throughout my journey, I've garnered a wealth of experience, from active involvement in college organizations, winning competitions, and completing internships companies. These experiences have been extraordinary opportunities for me.</p>
                 </div>
                 <div class="button-container">
-                    <Button :title="'Experience'"></Button>
-                    <Button :title="'Competition'"></Button>
-                    <Button :title="'Organization'"></Button>
+                    <Button :title="'Working'" :hash="'#working'"></Button>
+                    <Button :title="'Competition'" :hash="'#competition'"></Button>
+                    <Button :title="'Organization'" :hash="'#organization'"></Button>
                 </div>
             </div>
             <div class="container-image">
@@ -18,7 +18,7 @@
         </div>
 
         <!-- Working -->
-        <div class="container-experience">
+        <div class="container-experience" id="working">
             <h3 class="title-text-border">Working</h3>
             <div class="content-experience">
                 <div class="card-working-container">
@@ -32,7 +32,7 @@
         </div>
 
         <!-- Competition -->
-        <div class="container-experience">
+        <div class="container-experience" id="competition">
             <h3 class="title-text-border">Competition</h3>
             <div class="content-experience">
                 <div class="card-competition-container">
@@ -45,13 +45,13 @@
                 <div class="right-container">
                     <h1>Successfully achieving milestones throughout my academic journey.</h1>
                     <p>My academic journey has been a fulfilling and enriching experience filled with dedication, hard work, and the pursuit of excellence. I take great pride in the opportunity I've had to achieve victory in several competitions. Winning these competitions has been a source of immense satisfaction and a testament to my dedication and hard work.</p>
-                    <ButtonOutline :title="'View competition project'" class="mt-8"></ButtonOutline>
+                    <ButtonOutline :title="'View competition project'" :hash="'#\project'" class="mt-8"></ButtonOutline>
                 </div>
             </div>
         </div>
 
         <!-- Organization -->
-        <div class="container-experience">
+        <div class="container-experience" id="organization">
             <h3 class="title-text-border">Organization</h3>
             <div class="content-experience">
                 <div class="card-organization-container">
@@ -64,73 +64,8 @@
                     >
                     </CardOrganization>
                 </div>
-                <!-- <div class="card-image-container">
-                    <div class="image-container">
-                        <img src="../assets/images/image-organization.png" alt="">
-                    </div>
-                    <div class="image-container">
-                        <img src="../assets/images/image-organization.png" alt="">
-                    </div>
-                    <div class="image-container">
-                        <img src="../assets/images/image-organization.png" alt="">
-                    </div>
-                    <div class="image-container">
-                        <img src="../assets/images/image-organization.png" alt="">
-                    </div>
-                    <div class="image-container">
-                        <img src="../assets/images/image-organization.png" alt="">
-                    </div>
-                    <div class="image-container">
-                        <img src="../assets/images/image-organization.png" alt="">
-                    </div>
-                    <div class="image-container">
-                        <img src="../assets/images/image-organization.png" alt="">
-                    </div>
-                    <div class="image-container">
-                        <img src="../assets/images/image-organization.png" alt="">
-                    </div>
-                </div> -->
             </div>
         </div>
-        
-        <!-- <div class="container-competition">
-            <h3>Competition</h3>
-            <div class="card-competition-container">
-                <CardCompetition v-for="(competition, index) in competitions" :key="index" :class="{ 'last-item': index === competitions.length - 1 }">
-                    <template v-slot:title><h4>{{ competition.title }}</h4></template>
-                    <template v-slot:date><h5>{{ competition.date }}</h5></template>
-                    <template v-slot:description><p>{{ competition.description }}</p></template>
-                </CardCompetition>
-            </div>
-        </div>
-        <div class="container-competition">
-            <h3>Organization</h3>
-            <div class="card-competition-container">
-                <CardOrganization v-for="(organization, index) in organizations" :key="index" :class="{ 'last-item': index === organizations.length - 1 }">
-                    <template v-slot:title><h4>{{ organization.title }}</h4></template>
-                    <template v-slot:date><h5>{{ organization.date }}</h5></template>
-                    <template v-slot:list>
-                        <ul>
-                            <li v-for="list in organization.lists">{{ list.description }}</li>
-                        </ul>
-                    </template>
-                </CardOrganization>
-            </div>
-        </div>
-        <div class="container-competition">
-            <h3>Working</h3>
-            <div class="card-competition-container">
-                <CardOrganization v-for="(organization, index) in organizations" :key="index" :class="{ 'last-item': index === organizations.length - 1 }">
-                    <template v-slot:title><h4>{{ organization.title }}</h4></template>
-                    <template v-slot:date><h5>{{ organization.date }}</h5></template>
-                    <template v-slot:list>
-                        <ul>
-                            <li v-for="list in organization.lists">{{ list.description }}</li>
-                        </ul>
-                    </template>
-                </CardOrganization>
-            </div>
-        </div> -->
     </div>
 </template>
 
