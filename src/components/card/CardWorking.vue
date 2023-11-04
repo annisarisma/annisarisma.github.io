@@ -5,7 +5,7 @@
             <div class="header">
                 <h3>{{ title }}</h3>
                 <p>{{ place }}</p>
-                <ButtonOutline :title="'View project'" :routername="'ProjectDetail'" :id="id"></ButtonOutline>
+                <Button :title="'View project'" :routername="'ProjectDetail'" :id="id"></Button>
             </div>
         </div>
         <div class="image-container">
@@ -17,9 +17,10 @@
 
 <script>
 import ButtonOutline from '../button/ButtonOutline.vue';
+import Button from '../button/Button.vue';
 
 export default {
-    components: { ButtonOutline },
+    components: { ButtonOutline, Button },
     props: {
         title: String,
         image: String,

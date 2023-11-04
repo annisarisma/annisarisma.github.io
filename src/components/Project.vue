@@ -2,7 +2,7 @@
     <div class="project-section content-container" id="project">
         <div class="header-text">
             <h1>My Amazing Project</h1>
-            <p>Here are some of the projects I've had to work on in the past. Each project represents a unique opportunity for me to apply my skills and creativity to solve real-world problems and deliver meaningful solutions. I take great pride in the work I've accomplished, and I'm committed to continuously improving and expanding my abilities as a developer to contribute effectively to future projects.</p>
+            <p>Here are some of the projects I have worked on before, and I thoroughly enjoyed the development process during each of them. Each project represents a unique opportunity for me to apply my skills and creativity to solve real-world problems and deliver meaningful solutions. I take great pride in the work I've accomplished, and I'm committed to continuously improving and expanding my abilities as a developer to contribute effectively to future projects.</p>
         </div>
         <div class="card-container">
             <CardProject
@@ -68,6 +68,27 @@ export default {
                     date: 'September 2022 - Augustus 2023',
                     role: 'Backend Developer',
                     image_cover: 'cover-halalfood.png',
+                },
+                {
+                    id: 7,
+                    title: 'Laravel Vue API',
+                    date: 'Augustus 2022 - September 2023',
+                    role: 'Fullstack Developer',
+                    image_cover: 'cover-laravelvueapi.png',
+                },
+                {
+                    id: 8,
+                    title: 'CSV System',
+                    date: 'September 2022 - October 2023',
+                    role: 'Fullstack Developer',
+                    image_cover: 'cover-laravelvueapi.png',
+                },
+                {
+                    id: 9,
+                    title: 'Revamped Web Portfolio',
+                    date: 'October 2023 - November 2023',
+                    role: 'Frontend Developer',
+                    image_cover: 'cover-revampedwebportfolio.png',
                 },
             ]
         }

@@ -3,7 +3,6 @@
         <div class="header-text">
             <div class="title-text">
                 <h1>{{ index }}</h1>
-                <p>{{ date }}</p>
             </div>
             <div class="description-text">
                 <h3>{{ title }}</h3>
@@ -23,9 +22,10 @@
 
 <script>
 import Button from '../button/Button.vue';
+import ButtonOutline from '../button/ButtonOutline.vue';
 
 export default {
-    components: {Button},
+    components: {Button, ButtonOutline},
     props: {
         index: String,
         date: String, 

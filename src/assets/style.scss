@@ -2,6 +2,7 @@
     --black: #161616;
     --blacksec: #232323;
     --red: #F4143D;
+    --redsec: #dd0c33;
     --white: #e7e7e7;
     --whitesec: #A6A6A6;
     --Yellow: #F49B14;
@@ -209,6 +210,7 @@ p {
 .content-experience {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 40px;
 
     // Working
@@ -332,6 +334,7 @@ p {
             margin-bottom: 20px;
             width: 100%;
             display: flex;
+            align-items: center;
             gap: 20px;
             .icon-container {
                 background-color: var(--blacksec);
@@ -383,6 +386,9 @@ p {
             color: var(--white);
             border-radius: 12px;
             .header-text {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 .title-text {
                     display: flex;
                     justify-content: space-between;
@@ -390,7 +396,7 @@ p {
                     h1 {
                         font-size: 40px;
                         padding: 2px 0px;
-                        border-bottom: 2px solid var(--whitesec);
+                        border-bottom: 3px solid var(--red);
                     }
                     p {
                         font-size: 16px;
@@ -399,7 +405,7 @@ p {
                 }
                 .description-text {
                     margin-top: 16px;
-                    text-align: start;
+                    text-align: end;
                     transition: linear 0.3s;
                     p {
                         margin-top: 2px;
@@ -407,8 +413,8 @@ p {
                     }
                 }
             }
-            .date-hover {
-                display: none;
+            p {
+                margin-top: 12px;
                 transition: linear 0.3s;
             }
             .image-container {
@@ -425,76 +431,7 @@ p {
                 }
             }
             .button-container {
-                display: none;
                 margin-top: 12px;
-            }
-            &:hover {
-                overflow: hidden;
-                .header-text {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    .title-text {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        h1 {
-                            font-size: 40px;
-                            padding: 2px 0px;
-                            border-bottom: 2px solid var(--red);
-                        }
-                        p {
-                            display: none;
-                            transition: linear 0.3s;
-                        }
-                    }
-                    .description-text {
-                        margin-top: -2px;
-                        text-align: end;
-                        transition: linear 0.3s;
-                        p {
-                            margin-top: 2px;
-                            color: var(--whitesec);
-                        }
-                    }
-                }
-                .image-container {
-                    margin-top: 12px;
-                    width: 100%;
-                    height: 180px;
-                    background-color: var(--red);
-                    border-radius: 8px;
-                    overflow: hidden;
-                    animation: moveUp 0.5s linear;
-                    img {
-                        object-fit: cover;
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-                .date-hover {
-                    display: block;
-                    margin-top: 12px;
-                    color: var(--whitesec);
-                    transition: linear 0.3s;
-                    animation: moveUp 0.5s;
-                }
-                .button-container {
-                    overflow: hidden;
-                    transition: linear 0.3s;
-                    display: block;
-                    margin-top: 12px;
-                    animation: moveUp 0.5s linear normal;
-                }
-                @keyframes moveUp {
-                    0% {
-                        transform: translateY(10%);
-                    }
-        
-                    100% {
-                        transform: translateY(0%);
-                    }
-                }
             }
         }
     }
@@ -509,6 +446,9 @@ p {
 .button-primary {
     background-color: var(--red);
     color: var(--white);
+    &:hover {
+        background-color: var(--redsec);
+    }
 }
 .button-outline {
     background-color: transparent;
