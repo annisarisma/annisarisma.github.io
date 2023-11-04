@@ -21,22 +21,4 @@ export default {
 </script>
 
 <style lang="scss">
-.about-section {
-  padding: 80px 0px;
-  margin-bottom: 120px;
-}
-.shape-container {
-  display: flex;
-  gap: 36px;
-  width: 40%;
-  height: 280px;
-  overflow: hidden;
-  justify-content: center;
-  .shape {
-      width: 40px;
-      height: 328px;
-      background-color: brown;
-      transform: rotate(30deg);
-  }
-}
 </style>

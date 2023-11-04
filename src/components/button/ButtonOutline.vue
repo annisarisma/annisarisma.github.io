@@ -15,7 +15,8 @@ export default {
         title: String,
         link: String,
         routername: String,
-        hash: String
+        hash: String,
+        id: String
     }
 }
 </script>

@@ -25,8 +25,9 @@
                     <CardWorking
                     v-for="(job, index) in jobs"
                     :title="job.title" 
-                    :date="job.place" 
+                    :place="job.place" 
                     :image="job.image"
+                    :id="job.id"
                     data-aos="fade-up"></CardWorking>
                 </div>
             </div>
@@ -83,16 +84,19 @@ export default {
         return {
             jobs: [
                 {
+                    id: 2,
                     title: 'Fullstack Web Application Developer (Intern)',
                     place: 'PT PLN UPP JBT',
                     image: 'logo-pln.png'
                 },
                 {
+                    id: 3,
                     title: 'Fullstack Web Application Developer (Intern)',
                     place: 'PT PLN UPP JBT',
                     image: 'logo-kalla.png'
                 },
                 {
+                    id: 4,
                     title: 'Fullstack Web Application Developer (Freelance)',
                     place: 'PT PLN UPP JBT',
                     image: 'logo-pln.png'

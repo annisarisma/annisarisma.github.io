@@ -1,14 +1,14 @@
 <template>
     <div class="card-working">
+        <p class="date">{{ date }}</p>
         <div class="description-container">
             <div class="header">
                 <h3>{{ title }}</h3>
-                <p>{{ date }}</p>
-                <ButtonOutline :title="'View project'"></ButtonOutline>
+                <p>{{ place }}</p>
+                <ButtonOutline :title="'View project'" :routername="'ProjectDetail'" :id="id"></ButtonOutline>
             </div>
         </div>
         <div class="image-container">
-            <!-- <img src="../../assets/images/working-image.png" alt=""> -->
             <img :src="require('../../assets/images/' + image)">
         </div>
         <div class="shadow"></div>
@@ -24,6 +24,8 @@ export default {
         title: String,
         image: String,
         date: String,
+        id: String,
+        place: String
     }
 }
 </script>

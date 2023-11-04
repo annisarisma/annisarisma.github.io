@@ -1,5 +1,5 @@
 <template>
-    <div class="card-project" @mouseover="{cardHover = true;}" @mouseleave="{cardHover = false;}" :class="{'hover': cardHover}">
+    <div class="card-project">
         <div class="header-text">
             <div class="title-text">
                 <h1>{{ index }}</h1>
@@ -33,11 +33,6 @@ export default {
         role: String,
         id: String,
         image: String
-    },
-    data() {
-        return {
-            cardHover: false
-        }
     },
 
 }

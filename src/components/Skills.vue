@@ -109,28 +109,4 @@ export default {
 </script>
 
 <style lang="scss">
-.skills-section {
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 40px;
-    .softskill-container {
-        display: flex;
-        background-color: #232323;
-        border-radius: 8px;
-        width: 100%;
-        padding: 20px 0px;
-        .description-container {
-            width: 100%;
-            padding: 0px 20px;
-        }
-        .card-container {
-            margin: 0px 20px;
-            gap: 20px;
-            width: 80%;
-            display: flex;
-            justify-content: space-evenly;
-        }
-    }
-}
 </style>
