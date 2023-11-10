@@ -48,6 +48,9 @@
                         <p>{{ project_detail.description_header }}</p>
                         <div class="button-group">
                             <a v-for="tag in project_detail.tags" :href="tag.link" class="button button-outline text-sm">{{ tag.title }}</a>
+                            <ModalImage></ModalImage>
+                            <div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,10 +105,11 @@
 
 <script>
 import ButtonOutline from '../components/button/ButtonOutline.vue';
+import ModalImage from '../components/modal/ModalImage.vue';
 import Tag from '../components/tag/Tag.vue';
 
 export default {
-    components: {ButtonOutline, Tag},
+    components: {ButtonOutline, Tag, ModalImage},
     props: ['id', 'title', 'date', 'role'],
     data() {
         return {
@@ -286,7 +290,7 @@ export default {
                     description_header: 'The journey of developing the PLN Archive project during my internship was an invaluable experience. This project aimed to create an application for PT PLN (Perusahaan Listrik Negara), Indonesia\'s state-owned electricity company, with a primary focus on optimizing their archiving and data management processes.',
                     image_header: 'description-archivev1.png',
                     tags: [
-                        {title: 'Go to github', link: 'https://github.com/SI-RPL-2022/SI4306_A_ANJAMAN.git'},
+                        
                     ],
                     tasks: [
                         {list: 'Developed an Archive Management application to enhance administrative and financial processes at PT PLN.'},
@@ -422,6 +426,7 @@ export default {
                         {image: 'figma-logo.png'},
                         {image: 'html-logo.png'},
                         {image: 'css-logo.png'},
+                        {image: 'sass-logo.png'},
                         {image: 'bootstrap-logo.png'},
                         {image: 'js-logo.png'},
                         {image: 'jquery-logo.png'},
@@ -429,6 +434,7 @@ export default {
                         {image: 'laravel-logo.png'},
                         {image: 'ajax-logo.png'},
                         {image: 'mysql-logo.png'},
+                        {image: 'jira-logo.png'},
                         {image: 'git-logo.png'},
                         {image: 'github-logo.png'},
                     ],
@@ -438,7 +444,7 @@ export default {
                     description_header: 'The development process of the IAMS (Internal Audit Management System) involved a systematic approach to meet the specific needs of the Kalla Group. It began with a thorough analysis of the company\'s internal audit requirements. After defining the scope, the team designed a user-friendly interface and built the necessary features to support internal audit operations.',
                     image_header: 'description-iams.png',
                     tags: [
-                        {title: 'Go to page', link: ''},
+                        {title: 'Go to application', link: 'https://iams-dev.kallagroup.co.id/'},
                     ],
                     tasks: [
                         {list: 'Built a web based application using the SCRUM methodology.'},
@@ -490,6 +496,7 @@ export default {
                                 {image: 'figma-logo.png'},
                                 {image: 'html-logo.png'},
                                 {image: 'css-logo.png'},
+                                {image: 'sass-logo.png'},
                                 {image: 'bootstrap-logo.png'},
                                 {image: 'js-logo.png'},
                                 {image: 'jquery-logo.png'},
@@ -583,20 +590,19 @@ export default {
                     description: 'The Archive PLN V2 is a revamped version of the previous application, built with enhanced features and improved functionalities. This application serves as a comprehensive system designed to efficiently manage and organize the extensive archives within the PLN (Perusahaan Listrik Negara).',
                     image: 'splash-archivev2.png',
                     technologies: [
-                        {image: 'miro-logo.png'},
                         {image: 'figma-logo.png'},
                         {image: 'html-logo.png'},
                         {image: 'css-logo.png'},
                         {image: 'bootstrap-logo.png'},
                         {image: 'js-logo.png'},
                         {image: 'jquery-logo.png'},
+                        {image: 'ajax-logo.png'},
                         {image: 'php-logo.png'},
                         {image: 'laravel-logo.png'},
-                        {image: 'ajax-logo.png'},
-                        {image: 'xampp-logo.png'},
                         {image: 'mysql-logo.png'},
                         {image: 'git-logo.png'},
                         {image: 'github-logo.png'},
+                        {image: 'jira-logo.png'},
                     ],
                     icon: 'fa-list-check',
                     header: 'PLN\'s Archive V2 Web Application Development',
@@ -604,7 +610,7 @@ export default {
                     description_header: 'As a full-stack developer for Archive PLN V2, I take pride in contributing to the enhancement and optimization of existing features. My focus is on ensuring a seamless user experience and improving the application to meet the evolving needs of PLN.',
                     image_header: 'description-archivev2.png',
                     tags: [
-                        {title: 'Go to page', link: ''},
+                        
                     ],
                     tasks: [
                         {list: 'Revamped the application with an advanced, clean, and user-friendly interface.'},
@@ -724,7 +730,7 @@ export default {
                     description_header: 'NutriHive is an innovative platform dedicated to promoting health and well-being through personalized nutrition. Our mission is to empower individuals to make informed dietary choices by offering personalized nutrition recommendations based on their unique needs and goals. Using cutting-edge technology and scientific insights, NutriHive provides users with customized meal plans, dietary advice, and access to a community of like-minded individuals on a journey to better health. Whether youre seeking to manage your weight, improve your athletic performance, or simply lead a healthier lifestyle, NutriHive is your trusted partner in achieving your nutritional goals.',
                     image_header: 'description-nutrihive.png',
                     tags: [
-                        {title: 'Go to github', link: 'https://github.com/SI-RPL-2022/SI4306_A_ANJAMAN.git'},
+                        
                     ],
                     tasks: [
                         {list: 'Devised a User Experience and created a User Interface. Focusing on user-friendly interfaces and intuitive navigation.'},
@@ -861,7 +867,7 @@ export default {
                     description_header: 'Halal Food is a comprehensive application that empowers users to access information about halal food, providing a platform for the management of halal experiences. With the active participation of a dedicated community of contributors, the app facilitates food reviews and evaluations, ensuring the authenticity of halal offerings. Contributor can request an assessment of their establishments, and reviewers will inspect the halal status of the food. The final approval is granted by the superadmin. This collaborative process guarantees a diverse selection of authentic halal food experiences for users.',
                     image_header: 'description-halalfood.png',
                     tags: [
-                        {title: 'Go to application', link: 'https://github.com/SI-RPL-2022/SI4306_A_ANJAMAN.git'},
+                        {title: 'Go to application', link: 'https://halal-food-bandung.fly.dev/'},
                     ],
                     tasks: [
                         {list: 'Developed a Halal Food application in submission module using design thinking and Iterative Incremental methods.'},
@@ -1032,34 +1038,41 @@ export default {
                     ]
                 },
                 {
-                    id: 8,
-                    title: 'CSV System',
-                    date: 'September 2022 - October 2023',
+                    id: 7,
+                    title: 'Laravel Vue API',
+                    date: 'Augustus 2022 - September 2023',
                     role: 'Fullstack Developer',
-                    image_cover: 'cover-csvsystem.png',
-                    description: 'This is an application designed to upload CSV data and store the CSV data in the database. The application is built with broadcast and event web sockets to ensure real-time functionality.',
-                    image: 'splash-csvsystem.png',
+                    image_cover: 'cover-laravelvueapi.png',
+                    description: 'The Laravel Vue API application is a web that leverages a combination of Laravel, Vue.js, and API integration. This application combines the backend capabilities of the Laravel framework with the dynamic and responsive user interface crafted using Vue.js. The integration of APIs enhances the application\'s functionality, enabling efficient data communication between the frontend and backend components.',
+                    image: 'splash-laravelvueapi.png',
                     technologies: [
-                        {image: 'figma-logo.png'},
-                        {image: 'photoshop-logo.png'},
+                        {image: 'html-logo.png'},
+                        {image: 'css-logo.png'},
                         {image: 'js-logo.png'},
-                        {image: 'sass-logo.png'},
+                        {image: 'vite-logo.png'},
+                        {image: 'vue-logo.png'},
                         {image: 'tailwind-logo.png'},
+                        {image: 'php-logo.png'},
+                        {image: 'laravel-logo.png'},
+                        {image: 'postman-logo.png'},
+                        {image: 'mysql-logo.png'},
                         {image: 'git-logo.png'},
                         {image: 'github-logo.png'},
                     ],
                     icon: 'fa-list-check',
-                    header: 'Revamped Web Portfolio Web Application Project',
+                    header: 'Laravel Vue API Web Application Project',
                     sub_header: 'Personal Project',
-                    description_header: 'This is an application designed to upload CSV data and store the CSV data in the database. The application is built with broadcast and event web sockets to ensure real-time functionality.',
-                    image_header: 'description-csvsystem.png',
+                    description_header: 'The Laravel Vue API application is a web that leverages a combination of Laravel, Vue.js, and API integration. This application combines the backend capabilities of the Laravel framework with the dynamic and responsive user interface crafted using Vue.js. The integration of APIs enhances the application\'s functionality, enabling efficient data communication between the frontend and backend components.',
+                    image_header: 'description-laravelvueapi.png',
                     tags: [
-                        {title: 'Go to github', link: 'https://github.com/annisarisma/csv-system'},
+                        {title: 'Go to github', link: 'https://github.com/annisarisma/laravel-vue-v1'},
                     ],
                     tasks: [
-                        {list: 'Develop features for uploading CSV data into the application.'},
-                        {list: 'Ensure real-time functionality using Laravel Websocket Broadcast Event.'},
-                        {list: 'Create a well-structured and efficient database schema to store CSV data.'},
+                        {list: 'Implemented the entire front-end using Vue.js framework.'},
+                        {list: 'Implemented Vue Router for navigation between different sections and projects.'},
+                        {list: 'Utilized directives like v-bind and v-model for efficient data manipulation.'},
+                        {list: 'Create a well-structured and efficient database schema to store data.'},
+                        {list: 'Utilized Git for version control, maintaining a well-documented commit history.'},
                         {list: 'Optimize application features to enhance functionality.'},
                         {list: 'Build the backend of the application using Laravel and integrate Websocket functionality using Pusher.'},
                         {list: 'Implement broadcasting and events in Laravel for real-time communication.'},
@@ -1071,11 +1084,16 @@ export default {
                             title_span: 'Development Process',
                             description: 'An organized and efficient development process is essential for successful application development. In this journey, we illustrate how meticulous planning and well-coordinated steps contribute to achieving better outcomes in application development.',
                             technologies: [
-                                {image: 'figma-logo.png'},
-                                {image: 'photoshop-logo.png'},
+                                {image: 'html-logo.png'},
+                                {image: 'css-logo.png'},
                                 {image: 'js-logo.png'},
-                                {image: 'sass-logo.png'},
+                                {image: 'vite-logo.png'},
+                                {image: 'vue-logo.png'},
                                 {image: 'tailwind-logo.png'},
+                                {image: 'php-logo.png'},
+                                {image: 'laravel-logo.png'},
+                                {image: 'postman-logo.png'},
+                                {image: 'mysql-logo.png'},
                                 {image: 'git-logo.png'},
                                 {image: 'github-logo.png'},
                             ],
@@ -1083,32 +1101,32 @@ export default {
                                 {
                                     title: 'Assets and Libraries',
                                     description: 'Streamlining resource libraries for efficiency to optimize the development process. Configuring assets and libraries required for the application.',
-                                    image: 'model-csvsystem-assetsandlibraries.png'
+                                    image: 'model-laravelvueapi-assetsandlibraries.png'
                                 },
                                 {
-                                    title: 'Database Design',
-                                    description: 'Designed a structured and efficient database schema, involving modeling the database tables, relationships, data storage methodologies, and migration.',
-                                    image: 'model-csvsystem-databasedesign.png'
+                                    title: 'Vue Layouting',
+                                    description: 'Implemented the entire front-end using Vue.js framework. Implemented Vue Router for navigation between different sections and projects.',
+                                    image: 'model-laravelvueapi-layouting.gif'
                                 },
                                 {
                                     title: 'Optimized Feature',
                                     description: 'Optimization focuses on enhancing the functionality feature and addressing performance issues, ensuring it performs efficiently and meets the requirements.',
-                                    image: 'model-csvsystem-optimizedfeature.gif'
+                                    image: 'model-laravelvueapi-optimizedfeature.gif'
                                 },
                                 {
-                                    title: 'Websocket',
-                                    description: 'Built the backend Laravel with WebSocket using Pusher, ensuring broadcast and Laravel events to make a real time application.',
-                                    image: 'model-csvsystem-websocket.png'
+                                    title: 'Postman',
+                                    description: 'Simplify the testing process by sending requests to the API\'s endpoints. Examine responses, debug issues, and ensure the seamless functioning of the APIs.',
+                                    image: 'model-laravelvueapi-postman.png'
                                 },
                                 {
-                                    title: 'Database Queue',
-                                    description: 'Manages and processes tasks, referred to as jobs, asynchronous processing to ensure the time-consuming tasks and made it handled separately from the main application flow.',
-                                    image: 'model-csvsystem-databasequeue.png'
+                                    title: 'REST APi',
+                                    description: 'REST API to facilitate seamless communication between the frontend Vue.js framework and the backend Laravel framework.',
+                                    image: 'model-laravelvueapi-restapi.gif'
                                 },
                                 {
                                     title: 'Git',
                                     description: 'Enabling the maintenance of a well-structured and organized codebase for the application. Using Git commits to involve clear and descriptive messages that explain the changes made. Utilizing Git commits that reference previously assigned issues.',
-                                    image: 'model-csvsystem-git.png'
+                                    image: 'model-laravelvueapi-git.png'
                                 },
                             ],
                         },
@@ -1125,14 +1143,22 @@ export default {
                     technologies: [
                         {image: 'figma-logo.png'},
                         {image: 'photoshop-logo.png'},
-                        {image: 'js-logo.png'},
+                        {image: 'html-logo.png'},
+                        {image: 'css-logo.png'},
                         {image: 'sass-logo.png'},
-                        {image: 'tailwind-logo.png'},
+                        {image: 'js-logo.png'},
+                        {image: 'jquery-logo.png'},
+                        {image: 'ajax-logo.png'},
+                        {image: 'bootstrap-logo.png'},
+                        {image: 'php-logo.png'},
+                        {image: 'laravel-logo.png'},
+                        {image: 'pusher-logo.png'},
+                        {image: 'mysql-logo.png'},
                         {image: 'git-logo.png'},
                         {image: 'github-logo.png'},
                     ],
                     icon: 'fa-list-check',
-                    header: 'Revamped Web Portfolio Web Application Project',
+                    header: 'CSV System Web Application Project',
                     sub_header: 'Personal Project',
                     description_header: 'This is an application designed to upload CSV data and store the CSV data in the database. The application is built with broadcast and event web sockets to ensure real-time functionality.',
                     image_header: 'description-csvsystem.png',
@@ -1156,9 +1182,17 @@ export default {
                             technologies: [
                                 {image: 'figma-logo.png'},
                                 {image: 'photoshop-logo.png'},
-                                {image: 'js-logo.png'},
+                                {image: 'html-logo.png'},
+                                {image: 'css-logo.png'},
                                 {image: 'sass-logo.png'},
-                                {image: 'tailwind-logo.png'},
+                                {image: 'js-logo.png'},
+                                {image: 'jquery-logo.png'},
+                                {image: 'ajax-logo.png'},
+                                {image: 'bootstrap-logo.png'},
+                                {image: 'php-logo.png'},
+                                {image: 'laravel-logo.png'},
+                                {image: 'pusher-logo.png'},
+                                {image: 'mysql-logo.png'},
                                 {image: 'git-logo.png'},
                                 {image: 'github-logo.png'},
                             ],
@@ -1185,7 +1219,7 @@ export default {
                                 },
                                 {
                                     title: 'Database Queue',
-                                    description: 'Manages and processes tasks, referred to as jobs, asynchronous processing to ensure the time-consuming tasks and made it handled separately from the main application flow.',
+                                    description: 'Manages and processes tasks, referred to as jobs, and asynchronous processing to ensure the time-consuming tasks and made it handled separately from the main application flow.',
                                     image: 'model-csvsystem-databasequeue.png'
                                 },
                                 {
@@ -1208,9 +1242,12 @@ export default {
                     technologies: [
                         {image: 'figma-logo.png'},
                         {image: 'photoshop-logo.png'},
-                        {image: 'js-logo.png'},
+                        {image: 'html-logo.png'},
+                        {image: 'css-logo.png'},
                         {image: 'sass-logo.png'},
                         {image: 'tailwind-logo.png'},
+                        {image: 'js-logo.png'},
+                        {image: 'vue-logo.png'},
                         {image: 'git-logo.png'},
                         {image: 'github-logo.png'},
                     ],
@@ -1240,9 +1277,12 @@ export default {
                             technologies: [
                                 {image: 'figma-logo.png'},
                                 {image: 'photoshop-logo.png'},
-                                {image: 'js-logo.png'},
+                                {image: 'html-logo.png'},
+                                {image: 'css-logo.png'},
                                 {image: 'sass-logo.png'},
                                 {image: 'tailwind-logo.png'},
+                                {image: 'js-logo.png'},
+                                {image: 'vue-logo.png'},
                                 {image: 'git-logo.png'},
                                 {image: 'github-logo.png'},
                             ],
