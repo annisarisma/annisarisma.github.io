@@ -47,9 +47,9 @@
                     <div class="content">
                         <p>{{ project_detail.description_header }}</p>
                         <div class="button-group">
-                            <a v-for="tag in project_detail.tags" :href="tag.link" class="button button-outline text-sm">{{ tag.title }}</a>
-                            <ModalImage></ModalImage>
-                            <div>
+                            <div class="group-modal" v-for="tag in project_detail.tags">
+                                <a v-if="tag.title !== 'certificate'" class="button button-outline text-sm">{{ tag.title }}</a>
+                                <ModalImage v-if="tag.title === 'certificate'" :image="tag.image"></ModalImage>
                             </div>
                         </div>
                     </div>
@@ -290,7 +290,7 @@ export default {
                     description_header: 'The journey of developing the PLN Archive project during my internship was an invaluable experience. This project aimed to create an application for PT PLN (Perusahaan Listrik Negara), Indonesia\'s state-owned electricity company, with a primary focus on optimizing their archiving and data management processes.',
                     image_header: 'description-archivev1.png',
                     tags: [
-                        
+                        {title: 'certificate', image: 'pln.png'}
                     ],
                     tasks: [
                         {list: 'Developed an Archive Management application to enhance administrative and financial processes at PT PLN.'},
@@ -445,6 +445,7 @@ export default {
                     image_header: 'description-iams.png',
                     tags: [
                         {title: 'Go to application', link: 'https://iams-dev.kallagroup.co.id/'},
+                        {title: 'certificate', image: 'kalla.png'},
                     ],
                     tasks: [
                         {list: 'Built a web based application using the SCRUM methodology.'},

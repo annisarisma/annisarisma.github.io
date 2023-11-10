@@ -1,9 +1,9 @@
 <template>
-    <a @click="togglemodal" class="button button-outline text-sm">Open modal</a>
+    <a @click="togglemodal" class="button button-outline text-sm">View certificate</a>
     <div class="screen" v-if="showmodal" @click.self="togglemodal">
         <div class="modal-container">
             <div class="image-container">
-                <img src="../../assets/images/certificate/pln.png" alt="">
+                <img :src="require('../../assets/images/certificate/' + image)" alt="">
             </div>
             <div class="button-group">
                 <button @click="togglemodal" class="button button-primary font-bold">Close</button>
@@ -17,6 +17,7 @@ import Button from '../button/Button.vue';
 
 export default {
     components: { Button },
+    props: ['image'],
     data() {
         return {
             showmodal: false
