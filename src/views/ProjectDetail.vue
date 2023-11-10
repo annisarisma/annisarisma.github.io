@@ -47,8 +47,7 @@
                     <div class="content">
                         <p>{{ project_detail.description_header }}</p>
                         <div class="button-group">
-                            <ButtonOutline v-for="tag in project_detail.tags" :hash="tag.link" :title="tag.title">
-                            </ButtonOutline>
+                            <a v-for="tag in project_detail.tags" :href="tag.link" class="button button-outline text-sm">{{ tag.title }}</a>
                         </div>
                     </div>
                 </div>
@@ -321,7 +320,7 @@ export default {
                                 },
                                 {
                                     title: 'Database Design',
-                                    description: 'Database design for PLN Archive V1 encompasses the creation of a structured and efficient database schema.  It involves modeling the database tables, relationships, and data storage methodologies.',
+                                    description: 'Database design for PLN Archive V1 encompasses the creation of a structured and efficient database schema. It involves modeling the database tables, relationships, and data storage methodologies.',
                                     image: 'model-archivev1-databasedesign.png'
                                 },
                             ]
@@ -636,7 +635,7 @@ export default {
                                 },
                                 {
                                     title: 'Assets and Libraries',
-                                    description: 'Assets and Libraries Management for IAMS required for application development. Such as Datatables, Select2, JQuery, Bootstrap',
+                                    description: 'Assets and Libraries Management for application required for application development. Such as Datatables, Select2, JQuery, Bootstrap',
                                     image: 'model-archivev2-assetsandlibraries.png'
                                 },
                                 {
@@ -687,12 +686,12 @@ export default {
                             cards: [
                                 {
                                     title: 'Collaborated on Jira',
-                                    description: 'Enables to maintain a well-structured and organized codebase of IAMS application. Using Git commits that reference previously assigned issues',
+                                    description: 'Enables to maintain a well-structured and organized codebase of application. Using Git commits that reference previously assigned issues',
                                     image: 'model-archivev2-collaboratedonjira.png'
                                 },
                                 {
                                     title: 'Git',
-                                    description: 'Enables to maintain a well-structured and organized codebase of IAMS application. Using Git commits to involves a clear and descriptive message that explains the changes made',
+                                    description: 'Enables to maintain a well-structured and organized codebase of application. Using Git commits to involves a clear and descriptive message that explains the changes made',
                                     image: 'model-archivev2-git.png'
                                 },
                                 {
@@ -984,12 +983,12 @@ export default {
                             cards: [
                                 {
                                     title: 'Git',
-                                    description: 'Enables to maintain a well-structured and organized codebase of IAMS application. Using Git commits to involves a clear and descriptive message that explains the changes made',
+                                    description: 'Enables to maintain a well-structured and organized codebase of application. Using Git commits to involves a clear and descriptive message that explains the changes made. Using Git commits that reference previously assigned issues.',
                                     image: 'model-halalfood-git.png'
                                 },
                                 {
                                     title: 'Github Kanban',
-                                    description: 'Enables to maintain a well-structured and organized codebase of IAMS application. Using Git commits that reference previously assigned issues',
+                                    description: 'Enables to maintain a well-structured and organized codebase of application. Using Git commits that reference previously assigned issues',
                                     image: 'model-halalfood-githubkanban.png'
                                 },
                                 {
@@ -1027,6 +1026,251 @@ export default {
                                     title: 'CICD',
                                     description: 'Implemented CI/CD pipelines to automate the building, and deployment processes, ensuring that code changes were regularly integrated and delivered to production.',
                                     image: 'model-halalfood-cicd.png'
+                                },
+                            ],
+                        },
+                    ]
+                },
+                {
+                    id: 8,
+                    title: 'CSV System',
+                    date: 'September 2022 - October 2023',
+                    role: 'Fullstack Developer',
+                    image_cover: 'cover-csvsystem.png',
+                    description: 'This is an application designed to upload CSV data and store the CSV data in the database. The application is built with broadcast and event web sockets to ensure real-time functionality.',
+                    image: 'splash-csvsystem.png',
+                    technologies: [
+                        {image: 'figma-logo.png'},
+                        {image: 'photoshop-logo.png'},
+                        {image: 'js-logo.png'},
+                        {image: 'sass-logo.png'},
+                        {image: 'tailwind-logo.png'},
+                        {image: 'git-logo.png'},
+                        {image: 'github-logo.png'},
+                    ],
+                    icon: 'fa-list-check',
+                    header: 'Revamped Web Portfolio Web Application Project',
+                    sub_header: 'Personal Project',
+                    description_header: 'This is an application designed to upload CSV data and store the CSV data in the database. The application is built with broadcast and event web sockets to ensure real-time functionality.',
+                    image_header: 'description-csvsystem.png',
+                    tags: [
+                        {title: 'Go to github', link: 'https://github.com/annisarisma/csv-system'},
+                    ],
+                    tasks: [
+                        {list: 'Develop features for uploading CSV data into the application.'},
+                        {list: 'Ensure real-time functionality using Laravel Websocket Broadcast Event.'},
+                        {list: 'Create a well-structured and efficient database schema to store CSV data.'},
+                        {list: 'Optimize application features to enhance functionality.'},
+                        {list: 'Build the backend of the application using Laravel and integrate Websocket functionality using Pusher.'},
+                        {list: 'Implement broadcasting and events in Laravel for real-time communication.'},
+                        {list: 'Manage and process tasks asynchronously, ensuring that time-consuming tasks do not impact the main application flow.'},
+                    ],
+                    models: [
+                        {
+                            title: 'Forge a Streamlined',
+                            title_span: 'Development Process',
+                            description: 'An organized and efficient development process is essential for successful application development. In this journey, we illustrate how meticulous planning and well-coordinated steps contribute to achieving better outcomes in application development.',
+                            technologies: [
+                                {image: 'figma-logo.png'},
+                                {image: 'photoshop-logo.png'},
+                                {image: 'js-logo.png'},
+                                {image: 'sass-logo.png'},
+                                {image: 'tailwind-logo.png'},
+                                {image: 'git-logo.png'},
+                                {image: 'github-logo.png'},
+                            ],
+                            cards: [
+                                {
+                                    title: 'Assets and Libraries',
+                                    description: 'Streamlining resource libraries for efficiency to optimize the development process. Configuring assets and libraries required for the application.',
+                                    image: 'model-csvsystem-assetsandlibraries.png'
+                                },
+                                {
+                                    title: 'Database Design',
+                                    description: 'Designed a structured and efficient database schema, involving modeling the database tables, relationships, data storage methodologies, and migration.',
+                                    image: 'model-csvsystem-databasedesign.png'
+                                },
+                                {
+                                    title: 'Optimized Feature',
+                                    description: 'Optimization focuses on enhancing the functionality feature and addressing performance issues, ensuring it performs efficiently and meets the requirements.',
+                                    image: 'model-csvsystem-optimizedfeature.gif'
+                                },
+                                {
+                                    title: 'Websocket',
+                                    description: 'Built the backend Laravel with WebSocket using Pusher, ensuring broadcast and Laravel events to make a real time application.',
+                                    image: 'model-csvsystem-websocket.png'
+                                },
+                                {
+                                    title: 'Database Queue',
+                                    description: 'Manages and processes tasks, referred to as jobs, asynchronous processing to ensure the time-consuming tasks and made it handled separately from the main application flow.',
+                                    image: 'model-csvsystem-databasequeue.png'
+                                },
+                                {
+                                    title: 'Git',
+                                    description: 'Enabling the maintenance of a well-structured and organized codebase for the application. Using Git commits to involve clear and descriptive messages that explain the changes made. Utilizing Git commits that reference previously assigned issues.',
+                                    image: 'model-csvsystem-git.png'
+                                },
+                            ],
+                        },
+                    ]
+                },
+                {
+                    id: 8,
+                    title: 'CSV System',
+                    date: 'September 2022 - October 2023',
+                    role: 'Fullstack Developer',
+                    image_cover: 'cover-csvsystem.png',
+                    description: 'This is an application designed to upload CSV data and store the CSV data in the database. The application is built with broadcast and event web sockets to ensure real-time functionality.',
+                    image: 'splash-csvsystem.png',
+                    technologies: [
+                        {image: 'figma-logo.png'},
+                        {image: 'photoshop-logo.png'},
+                        {image: 'js-logo.png'},
+                        {image: 'sass-logo.png'},
+                        {image: 'tailwind-logo.png'},
+                        {image: 'git-logo.png'},
+                        {image: 'github-logo.png'},
+                    ],
+                    icon: 'fa-list-check',
+                    header: 'Revamped Web Portfolio Web Application Project',
+                    sub_header: 'Personal Project',
+                    description_header: 'This is an application designed to upload CSV data and store the CSV data in the database. The application is built with broadcast and event web sockets to ensure real-time functionality.',
+                    image_header: 'description-csvsystem.png',
+                    tags: [
+                        {title: 'Go to github', link: 'https://github.com/annisarisma/csv-system'},
+                    ],
+                    tasks: [
+                        {list: 'Develop features for uploading CSV data into the application.'},
+                        {list: 'Ensure real-time functionality using Laravel Websocket Broadcast Event.'},
+                        {list: 'Create a well-structured and efficient database schema to store CSV data.'},
+                        {list: 'Optimize application features to enhance functionality.'},
+                        {list: 'Build the backend of the application using Laravel and integrate Websocket functionality using Pusher.'},
+                        {list: 'Implement broadcasting and events in Laravel for real-time communication.'},
+                        {list: 'Manage and process tasks asynchronously, ensuring that time-consuming tasks do not impact the main application flow.'},
+                    ],
+                    models: [
+                        {
+                            title: 'Forge a Streamlined',
+                            title_span: 'Development Process',
+                            description: 'An organized and efficient development process is essential for successful application development. In this journey, we illustrate how meticulous planning and well-coordinated steps contribute to achieving better outcomes in application development.',
+                            technologies: [
+                                {image: 'figma-logo.png'},
+                                {image: 'photoshop-logo.png'},
+                                {image: 'js-logo.png'},
+                                {image: 'sass-logo.png'},
+                                {image: 'tailwind-logo.png'},
+                                {image: 'git-logo.png'},
+                                {image: 'github-logo.png'},
+                            ],
+                            cards: [
+                                {
+                                    title: 'Assets and Libraries',
+                                    description: 'Streamlining resource libraries for efficiency to optimize the development process. Configuring assets and libraries required for the application.',
+                                    image: 'model-csvsystem-assetsandlibraries.png'
+                                },
+                                {
+                                    title: 'Database Design',
+                                    description: 'Designed a structured and efficient database schema, involving modeling the database tables, relationships, data storage methodologies, and migration.',
+                                    image: 'model-csvsystem-databasedesign.png'
+                                },
+                                {
+                                    title: 'Optimized Feature',
+                                    description: 'Optimization focuses on enhancing the functionality feature and addressing performance issues, ensuring it performs efficiently and meets the requirements.',
+                                    image: 'model-csvsystem-optimizedfeature.gif'
+                                },
+                                {
+                                    title: 'Websocket',
+                                    description: 'Built the backend Laravel with WebSocket using Pusher, ensuring broadcast and Laravel events to make a real time application.',
+                                    image: 'model-csvsystem-websocket.png'
+                                },
+                                {
+                                    title: 'Database Queue',
+                                    description: 'Manages and processes tasks, referred to as jobs, asynchronous processing to ensure the time-consuming tasks and made it handled separately from the main application flow.',
+                                    image: 'model-csvsystem-databasequeue.png'
+                                },
+                                {
+                                    title: 'Git',
+                                    description: 'Enabling the maintenance of a well-structured and organized codebase for the application. Using Git commits to involve clear and descriptive messages that explain the changes made. Utilizing Git commits that reference previously assigned issues.',
+                                    image: 'model-csvsystem-git.png'
+                                },
+                            ],
+                        },
+                    ]
+                },
+                {
+                    id: 9,
+                    title: 'Revamped Web Portfolio',
+                    date: 'October 2023 - November 2023',
+                    role: 'Frontend Developer',
+                    image_cover: 'cover-revampedwebportfolio.png',
+                    description: 'This is an application that I created to showcase and provide details about myself, including contact information and previous projects I have worked on. I deployed this application using GitHub Pages and built it with various tools, which you can learn more about in the description below.',
+                    image: 'splash-revampedwebportfolio.png',
+                    technologies: [
+                        {image: 'figma-logo.png'},
+                        {image: 'photoshop-logo.png'},
+                        {image: 'js-logo.png'},
+                        {image: 'sass-logo.png'},
+                        {image: 'tailwind-logo.png'},
+                        {image: 'git-logo.png'},
+                        {image: 'github-logo.png'},
+                    ],
+                    icon: 'fa-list-check',
+                    header: 'Revamped Web Portfolio Web Application Project',
+                    sub_header: 'Personal Project',
+                    description_header: 'I have dedicated a lot of effort to this website. I will always be consistent in introducing new features and continually improving its overall quality. According to this page, I really want to share my thoughts and opinions on life. Sometimes, maybe this is not all about my working project, but it\'s all about my interests and all the things I really like to do. I like to play video games, write, or develop, create new things, and build something even though it will be built inside of video games. I believe that what defines me as a valuable asset to a company is not solely my project work but also the diverse range of activities I engage in. I find great joy in the process of creation and building, making the development phase an exciting aspect for me. Therefore, I am committed to enjoying and enhancing my skills in creating new and innovative things in the future.',
+                    image_header: 'description-revampedwebportfolio.png',
+                    tags: [
+                        {title: 'Go to github', link: 'https://github.com/annisarisma/annisarisma.github.io'},
+                    ],
+                    tasks: [
+                        {list: 'Designed the application in figma with user experience and interface to make clearly user friendly'},
+                        {list: 'Implemented the entire front-end using Vue.js framework.'},
+                        {list: 'Translated design mockups into responsive and visually appealing Vue.js components.'},
+                        {list: 'Layouting, routing, and make components in vue for dynamic, reuseable, and flexible changes in the future'},
+                        {list: 'Successfully deployed the application on a github pages.'},
+                        {list: 'Implemented Vue Router for navigation between different sections and projects.'},
+                        {list: 'Handled dynamic route parameters for displaying project details.'},
+                        {list: 'Utilized directives like v-bind and v-model for efficient data manipulation.'},
+                    ],
+                    models: [
+                        {
+                            title: 'Forge a Streamlined',
+                            title_span: 'Development Process',
+                            description: 'An organized and efficient development process is essential for successful application development. In this journey, we illustrate how meticulous planning and well-coordinated steps contribute to achieving better outcomes in application development.',
+                            technologies: [
+                                {image: 'figma-logo.png'},
+                                {image: 'photoshop-logo.png'},
+                                {image: 'js-logo.png'},
+                                {image: 'sass-logo.png'},
+                                {image: 'tailwind-logo.png'},
+                                {image: 'git-logo.png'},
+                                {image: 'github-logo.png'},
+                            ],
+                            cards: [
+                                {
+                                    title: 'Figma to Code',
+                                    description: 'Transforming Design elements into HTML and CSS code, ensuring to bring the beautifully crafted UI to life.',
+                                    image: 'model-revampedwebportfolio-figmatocode.png'
+                                },
+                                {
+                                    title: 'Assets and Libraries',
+                                    description: 'Efficiently configuring assets and libraries required for the application. This involved organizing and integrating essential resources and libraries.',
+                                    image: 'model-revampedwebportfolio-assetsandlibraries.png'
+                                },
+                                {
+                                    title: 'Vue Components',
+                                    description: 'Developed reusable Vue.js components for various sections of the web portfolio.',
+                                    image: 'model-revampedwebportfolio-components.png'
+                                },
+                                {
+                                    title: 'Git',
+                                    description: 'Enables to maintain a well-structured and organized codebase of application. Using Git commits to involves a clear and descriptive message that explains the changes made',
+                                    image: 'model-revampedwebportfolio-git.png'
+                                },
+                                {
+                                    title: 'Github Pages',
+                                    description: 'GitHub Pages is used to deploy a Vue.js framework application publicly, allowing everyone to access it.',
+                                    image: 'model-revampedwebportfolio-githubpages.png'
                                 },
                             ],
                         },

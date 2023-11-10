@@ -81,7 +81,7 @@ export default {
                     title: 'CSV System',
                     date: 'September 2022 - October 2023',
                     role: 'Fullstack Developer',
-                    image_cover: 'cover-laravelvueapi.png',
+                    image_cover: 'cover-csvsystem.png',
                 },
                 {
                     id: 9,
