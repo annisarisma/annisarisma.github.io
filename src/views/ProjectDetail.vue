@@ -48,7 +48,7 @@
                         <p>{{ project_detail.description_header }}</p>
                         <div class="button-group">
                             <div class="group-modal" v-for="tag in project_detail.tags">
-                                <a v-if="tag.title !== 'certificate'" class="button button-outline text-sm">{{ tag.title }}</a>
+                                <a v-if="tag.title !== 'certificate'" :href="tag.link" class="button button-outline text-sm">{{ tag.title }}</a>
                                 <ModalImage v-if="tag.title === 'certificate'" :image="tag.image"></ModalImage>
                             </div>
                         </div>

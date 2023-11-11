@@ -1,5 +1,5 @@
 <template>
-    <div class="experience-section content-container">
+    <div class="experience-section content-container" id="experience">
         <div class="container-header">
             <div class="container-text" data-aos="fade-right">
                 <div class="text-title">

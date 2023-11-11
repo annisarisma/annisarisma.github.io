@@ -1,5 +1,5 @@
 <template>
-  <div class="home-section content-container">
+  <div class="home-section content-container" id="home">
     <div class="description-container" data-aos="fade-right">
         <h1>Annisa Risma Aqilah</h1>
         <p>I'm a dedicated and detail-oriented individual with a strong work ethic, who thrives on precision and impeccable organization. As a full-stack developer, I bring these qualities into every project, ensuring that every line of code and every element of design is executed with meticulous attention.</p>
@@ -15,8 +15,8 @@
             </a>
         </div>
         <div class="button-group">
-            <Button :title="'Read more'"></Button>
-            <ButtonOutline :title="'View my project'"></ButtonOutline>
+            <Button :hash="'#about'" :title="'Read more'"></Button>
+            <ButtonOutline :hash="'#project'" :title="'View my project'"></ButtonOutline>
         </div>
     </div>
     <div class="image-splash-container" data-aos="fade-left">
