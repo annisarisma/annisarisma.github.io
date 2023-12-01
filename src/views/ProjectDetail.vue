@@ -119,7 +119,7 @@ export default {
                     title: 'Anjaman',
                     date: 'February 2022 - July 2022',
                     role: 'Fullstack Web Developer',
-                    description: 'Anjaman" is an application designed to facilitate the sale of handwoven crafts by micro, small, and medium enterprises (UMKM) in Sumatra. It serves as a platform that connects both sellers and buyers within the realm of handwoven craftsmanship.',
+                    description: 'Anjaman" is an application designed to facilitate the sale of handwoven crafts by micro, small, and medium enterprises (MSME) in Sumatra. It serves as a platform that connects both sellers and buyers within the realm of handwoven craftsmanship.',
                     image: 'splash-anjaman.png',
                     technologies: [
                         {image: 'miro-logo.png'},
@@ -150,13 +150,14 @@ export default {
                         {title: 'Go to github', link: 'https://github.com/SI-RPL-2022/SI4306_A_ANJAMAN.git'},
                     ],
                     tasks: [
-                        {list: 'Built a full-stack application for MSMEs (Micro, Small, and Medium Enterprises) that sell handwoven craft from Sumatra.'},
                         {list: 'Contributed as a full-stack developer and constructed 10 features.'},
-                        {list: 'Spearheading both front-end and back-end development to create a holistic, high-performing platform for Anjaman.'},
+                        {list: 'Spearheading both front-end suing HTML, CSS, Javascript, JQuery'},
+                        {list: 'Developed back-end to create a holistic, high-performing platform for Anjaman using PHP, and Laravel.'},
                         {list: 'Implementing special features such as product ratings, reviews, and recommendations to elevate the quality of service.'},
-                        {list: 'Within the Scrum methodology, I actively participated in sprint planning, sprint reviews.'},
-                        {list: 'Designed and managed the database infrastructure'},
-                        {list: 'Managed documentation and collaborated using version control. Made regular, well-documented commits, and actively engaged in code reviews to maintain code quality and team collaboration.'},
+                        {list: 'Built with the Scrum methodology, and actively participated in sprint planning, sprint reviews'},
+                        {list: 'Designed and managed the database infrastructure using MySQL'},
+                        {list: 'Managed documentation and collaborated using version control, Git, and Github.'},
+                        {list: 'Engaged in code reviews to maintain code quality and team collaboration using Slack, and Trello.'},
                     ],
                     models: [
                         {
@@ -293,12 +294,12 @@ export default {
                         {title: 'certificate', image: 'pln.png'}
                     ],
                     tasks: [
-                        {list: 'Developed an Archive Management application to enhance administrative and financial processes at PT PLN.'},
-                        {list: 'Contributed as a fullstack web developer and analyzed the feature to boost an effectiveness and efficiency of application.'},
-                        {list: 'Successfully completed Version 1 (V.1) during internship'},
-                        {list: 'Implement responsive and user-friendly web interfaces based on design specifications.'},
-                        {list: 'Build and maintain the server-side logic and databases for efficient data storage and retrieval.'},
-                        {list: 'Design and maintain the database schema to efficiently store and manage vast amounts of archival data.'},
+                        {list: 'Developed the front-end user interface based on figma design, ensuring a responsive experience using HTML, CSS, SASS, Bootstrap, JavaScript, and jQuery.'},
+                        {list: 'Developed backend application and functionality feature using PHP, Laravel, Javascript, and AJAX.'},
+                        {list: 'Collaborated as a team developer using Git, and GitHub repositories.'},
+                        {list: 'Worked collaboratively with teams to provide progress updates and address any issues using Trello.'},
+                        {list: 'Conducted weekly meetings and presented updated progress to the project manager and stakeholders.'},
+                        {list: 'Successfully built 8 requirements or features of the application.'},
                     ],
                     models: [
                         {
@@ -448,14 +449,15 @@ export default {
                         {title: 'certificate', image: 'kalla.png'},
                     ],
                     tasks: [
-                        {list: 'Built a web based application using the SCRUM methodology.'},
-                        {list: 'Built a website-based application with HTML, CSS, SASS, Bootstrap, AJAX, JQuery, JavaScript, PHP, Laravel, and MySQL.'},
-                        {list: 'Contributed as a full-stack developer, handling both the backend and frontend development tasks.'},
-                        {list: 'Developed the front-end user interface based on design specifications, ensured a user-friendly and responsive experience.'},
-                        {list: 'Collaborated as a team developer using a GitHub repository.'},
-                        {list: 'Collaborated with the project manager and stakeholders to provide progress updates and address any issues.'},
-                        {list: 'Optimized application performance and tested functionality with QA for seamless usage.'},
-                        {list: 'Successfully completed 2 sprints in a project and successfully completed 12 PBI at second sprint'},
+                        {list: 'Built a web-based application using the SCRUM methodology.'},
+                        {list: 'Developed the front-end user interface based on design specifications, and responsive experience using HTML, CSS, SASS, Bootstrap, JavaScript, and jQuery.'},
+                        {list: 'Developed backend functionality and systems using PHP, Laravel, AJAX, and JSON.'},
+                        {list: 'Designed and enhanced a structured, relational, and modeled database schema using MySQL.'},
+                        {list: 'Collaborated as a team developer using Git, GitHub, and Gitlab repositories.'},
+                        {list: 'Worked collaboratively with the project manager and stakeholders to provide progress updates and address any issues using Jira.'},
+                        {list: 'Conducted daily stand-up meetings and presented updated progress to the team.'},
+                        {list: 'Performed code reviews and tested functionality with QA to ensure seamless usage.'},
+                        {list: 'Successfully completed two sprints in a project and delivered all 12 PBIs during the second sprint.'},
                     ],
                     models: [
                         {
@@ -614,11 +616,12 @@ export default {
                         
                     ],
                     tasks: [
-                        {list: 'Revamped the application with an advanced, clean, and user-friendly interface.'},
-                        {list: 'Developed an application using HTML, CSS, SASS, Bootstrap, AJAX, JQuery, JavaScript, PHP, Laravel, and MySQL.'},
-                        {list: 'Built upon the existing foundations and enhanced their functionality'},
-                        {list: 'Managed hosting responsibilities on the company\'s local servers.'},
-                        {list: 'Ensured optimal performance and accessibility through user acceptance testing.'},
+                        {list: 'Revamped the application with a clean, and user-friendly interface using HTML, CSS, SASS, Bootstrap, Javascript, and JQuery.'},
+                        {list: 'Developed backend and functionality application using Javascript, AJAX, PHP, and Laravel.'},
+                        {list: 'Designed and enhanced a structured, relational, and modeled database schema using MySQL.'},
+                        {list: 'Collaborated as a team developer using Git, and GitHub repositories.'},
+                        {list: 'Conducted weekly meetings with developer teams and stakeholders.'},
+                        {list: 'Ensured optimal performance, accessibility, and high-quality deliverables through user acceptance testing and debugging.'},
                         {list: 'Successfully deployed application on a local server at PT PLN.'},
                     ],
                     models: [
@@ -871,10 +874,15 @@ export default {
                         {title: 'Go to application', link: 'https://halal-food-bandung.fly.dev/'},
                     ],
                     tasks: [
-                        {list: 'Developed a Halal Food application in submission module using design thinking and Iterative Incremental methods.'},
+                        {list: 'Developed a Halal Food application in submission module using Iterative Incremental and Design Thinking methods.'},
                         {list: 'Designed the application to provide restaurants to obtain a halal certificate based on reviews from experts and provide people to contributed as a reviewer to review the restaurant regarding their halal menus and details about the ingredients used in those meals.'},
+                        {list: 'Contributed as a backend developer in submission module using Javascript, AJAX, PHP, Laravel, and other library.'},
+                        {list: 'Designed and created the database structure using MySQL.'},
+                        {list: 'Collaborated using git, github, github kanban, and notion.'},
                         {list: 'Successfully built 43 requirements or features in the 3rd iteration.'},
-                        {list: 'Successfully deployed the application on a public server.'},
+                        {list: 'Implemented UAT and Load Testing using JMeter.'},
+                        {list: 'Implemented automatic deploy using github action, CI/CD.'},
+                        {list: 'Successfully deployed application on a public server using fly.io, and niagahoster cloud server.'},
                         {list: 'Designed and created the database structure for storing restaurant information, user data, and reviews process.'},
                         {list: 'Implement user approval and secured automatic deadline for the review process to ensure secure access to the application\'s features.'},
                         {list: 'Ensure that users are assigned appropriate roles, status, and permissions based on their responsibilities of the deadline reviews.'},
@@ -1069,15 +1077,15 @@ export default {
                         {title: 'Go to github', link: 'https://github.com/annisarisma/laravel-vue-v1'},
                     ],
                     tasks: [
-                        {list: 'Implemented the entire front-end using Vue.js framework.'},
+                        {list: 'Built frontend application using HTML, CSS, SCSS, Javascript, and Vue.js'},
+                        {list: 'Built backend application using PHP, Laravel, and JSON data.'},
+                        {list: 'Designed and constructed database schema using MySQL.'},
+                        {list: 'Implemented REST API and testing request using Postman.'},
                         {list: 'Implemented Vue Router for navigation between different sections and projects.'},
                         {list: 'Utilized directives like v-bind and v-model for efficient data manipulation.'},
                         {list: 'Create a well-structured and efficient database schema to store data.'},
                         {list: 'Utilized Git for version control, maintaining a well-documented commit history.'},
                         {list: 'Optimize application features to enhance functionality.'},
-                        {list: 'Build the backend of the application using Laravel and integrate Websocket functionality using Pusher.'},
-                        {list: 'Implement broadcasting and events in Laravel for real-time communication.'},
-                        {list: 'Manage and process tasks asynchronously, ensuring that time-consuming tasks do not impact the main application flow.'},
                     ],
                     models: [
                         {
@@ -1262,7 +1270,7 @@ export default {
                     ],
                     tasks: [
                         {list: 'Designed the application in figma with user experience and interface to make clearly user friendly'},
-                        {list: 'Implemented the entire front-end using Vue.js framework.'},
+                        {list: 'Developed a personal web using HTML, CSS, SASS, Tailwind, Javascript, Vue.js framework, JSON data.'},
                         {list: 'Translated design mockups into responsive and visually appealing Vue.js components.'},
                         {list: 'Layouting, routing, and make components in vue for dynamic, reuseable, and flexible changes in the future'},
                         {list: 'Successfully deployed the application on a github pages.'},
